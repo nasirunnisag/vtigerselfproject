@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="vtiger.Organization.test.CreateorgwithIndustry"/>
+      <class name="vtiger.contactTests.CreteContactTest"/>
+      <class name="vtiger.contactTests.CreateContactwithorgtest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+<!-- how to know the classnam? go toclass select classname rightclick select copy qualifiedname-->
