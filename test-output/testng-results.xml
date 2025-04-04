@@ -1,17 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="0" skipped="1">
   <reporter-output>
+    <line>
+      <![CDATA[----------db connecton successfull-----------]]>
+    </line>
+    <line>
+      <![CDATA[execution started]]>
+    </line>
+    <line>
+      <![CDATA[chrome------browser launched----------]]>
+    </line>
+    <line>
+      <![CDATA[------browser launched----------]]>
+    </line>
+    <line>
+      <![CDATA[---------login successfully]]>
+    </line>
+    <line>
+      <![CDATA[java.lang.NoClassDefFoundError: vtiger/Objectrepository/HomePage-> reason for skip]]>
+    </line>
+    <line>
+      <![CDATA[----------browser closed---------]]>
+    </line>
+    <line>
+      <![CDATA[execution finish]]>
+    </line>
+    <line>
+      <![CDATA[=====db closed=======]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-04-03T19:07:00 IST" name="Default suite" finished-at="2025-04-03T19:07:00 IST" duration-ms="87">
+  <suite started-at="2025-04-04T13:20:02 IST" name="Suite" finished-at="2025-04-04T13:20:23 IST" duration-ms="21051">
     <groups>
     </groups>
-    <test started-at="2025-04-03T19:07:00 IST" name="Default test" finished-at="2025-04-03T19:07:00 IST" duration-ms="87">
-      <class name="vtiger.practise.ReadDataFromCmdLine">
-        <test-method signature="readdata()[pri:0, instance:vtiger.practise.ReadDataFromCmdLine@74235045]" started-at="2025-04-03T19:07:00 IST" name="readdata" finished-at="2025-04-03T19:07:00 IST" duration-ms="17" status="PASS">
+    <test started-at="2025-04-04T13:20:02 IST" name="Test" finished-at="2025-04-04T13:20:23 IST" duration-ms="21051">
+      <class name="vtiger.Organization.test.CreateOrganizationTest">
+        <test-method is-config="true" signature="bsconfig()[pri:0, instance:vtiger.Organization.test.CreateOrganizationTest@6ed3ccb2]" started-at="2025-04-04T13:20:02 IST" name="bsconfig" finished-at="2025-04-04T13:20:02 IST" duration-ms="419" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[----------db connecton successfull-----------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- bsconfig -->
+        <test-method is-config="true" signature="bcconfig()[pri:0, instance:vtiger.Organization.test.CreateOrganizationTest@6ed3ccb2]" started-at="2025-04-04T13:20:03 IST" name="bcconfig" finished-at="2025-04-04T13:20:09 IST" duration-ms="6417" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[chrome------browser launched----------]]>
+            </line>
+            <line>
+              <![CDATA[------browser launched----------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- bcconfig -->
+        <test-method is-config="true" signature="bmconfig()[pri:0, instance:vtiger.Organization.test.CreateOrganizationTest@6ed3ccb2]" started-at="2025-04-04T13:20:09 IST" name="bmconfig" finished-at="2025-04-04T13:20:23 IST" duration-ms="13858" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---------login successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- bmconfig -->
+        <test-method signature="demoRegression()[pri:0, instance:vtiger.Organization.test.CreateOrganizationTest@6ed3ccb2]" started-at="2025-04-04T13:20:23 IST" name="demoRegression" finished-at="2025-04-04T13:20:23 IST" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- readdata -->
-      </class> <!-- vtiger.practise.ReadDataFromCmdLine -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- demoRegression -->
+        <test-method is-config="true" signature="amconfig()[pri:0, instance:vtiger.Organization.test.CreateOrganizationTest@6ed3ccb2]" started-at="2025-04-04T13:20:23 IST" name="amconfig" finished-at="2025-04-04T13:20:23 IST" duration-ms="3" status="FAIL">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[vtiger/Objectrepository/HomePage]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: vtiger/Objectrepository/HomePage
+at vtiger.GenericUtility.BaseClass.amconfig(BaseClass.java:85)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.ClassNotFoundException: vtiger.Objectrepository.HomePage
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amconfig -->
+        <test-method is-config="true" signature="bmconfig()[pri:0, instance:vtiger.Organization.test.CreateOrganizationTest@6ed3ccb2]" started-at="2025-04-04T13:20:23 IST" name="bmconfig" finished-at="2025-04-04T13:20:23 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmconfig -->
+        <test-method signature="tc1()[pri:0, instance:vtiger.Organization.test.CreateOrganizationTest@6ed3ccb2]" started-at="2025-04-04T13:20:23 IST" name="tc1" finished-at="2025-04-04T13:20:23 IST" duration-ms="1" status="SKIP">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[vtiger/Objectrepository/HomePage]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: vtiger/Objectrepository/HomePage
+at vtiger.GenericUtility.BaseClass.amconfig(BaseClass.java:85)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.ClassNotFoundException: vtiger.Objectrepository.HomePage
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+            <line>
+              <![CDATA[java.lang.NoClassDefFoundError: vtiger/Objectrepository/HomePage-> reason for skip]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc1 -->
+        <test-method is-config="true" signature="amconfig()[pri:0, instance:vtiger.Organization.test.CreateOrganizationTest@6ed3ccb2]" started-at="2025-04-04T13:20:23 IST" name="amconfig" finished-at="2025-04-04T13:20:23 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amconfig -->
+        <test-method is-config="true" signature="acconfig()[pri:0, instance:vtiger.Organization.test.CreateOrganizationTest@6ed3ccb2]" started-at="2025-04-04T13:20:23 IST" name="acconfig" finished-at="2025-04-04T13:20:23 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[----------browser closed---------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- acconfig -->
+        <test-method is-config="true" signature="asconfig()[pri:0, instance:vtiger.Organization.test.CreateOrganizationTest@6ed3ccb2]" started-at="2025-04-04T13:20:24 IST" name="asconfig" finished-at="2025-04-04T13:20:24 IST" duration-ms="70" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[=====db closed=======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- asconfig -->
+      </class> <!-- vtiger.Organization.test.CreateOrganizationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

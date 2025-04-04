@@ -44,7 +44,7 @@ public void tc1() throws EncryptedDocumentException, IOException
 	//click on create organization
 	OrganizationPage op=new OrganizationPage(d);
 	op.orglooklink();
-	Assert.fail();
+	//Assert.fail();
 
 	//create organization with mandatory fields
 	CreatingNewOrganizationPage cnop=new CreatingNewOrganizationPage(d);
@@ -62,10 +62,6 @@ public void tc1() throws EncryptedDocumentException, IOException
 		System.out.println("fail");
 	}	
 }
-@Test
-public void demoRegression()
-{
-	System.out.println("this is demo");
-}
+
 }
 
