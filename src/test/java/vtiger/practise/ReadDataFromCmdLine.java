@@ -7,7 +7,7 @@ public class ReadDataFromCmdLine {
 public void readdata()
 {
 	String BROWSER = System.getProperty("browser");
-	String URL = System.getProperty("urlL");
+	String URL = System.getProperty("url");
 	String UNAME = System.getProperty("username");
 	String PWD = System.getProperty("pwd");
 	System.out.println(BROWSER);
