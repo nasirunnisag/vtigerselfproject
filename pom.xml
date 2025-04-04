@@ -4,6 +4,7 @@
   <artifactId>Vtigerrfra</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 <profiles>
+
 <profile>
 <id>cot</id>
 <build>
@@ -15,6 +16,42 @@
         <configuration>
           <suiteXmlFiles>
             <suiteXmlFile>testngcot.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+</plugin>
+
+</plugins>
+</build>
+</profile>
+<profile>
+<id>fullreg</id>
+<build>
+<plugins>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.5.3</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testngbatch-fullregression.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+</plugin>
+
+</plugins>
+</build>
+</profile>
+<profile>
+<id>llel</id>
+<build>
+<plugins>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.5.3</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testngllelexecution.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
 </plugin>
